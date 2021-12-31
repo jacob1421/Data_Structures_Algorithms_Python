@@ -1,0 +1,1 @@
+This is a review of Data Structures and Algorithms in Python.
