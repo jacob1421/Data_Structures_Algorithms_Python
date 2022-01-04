@@ -1,4 +1,4 @@
-from Chapter_3.Stack import Stack
+from Chapter_3.Stack_Review.Stack import Stack
 
 
 def base_converter(number, base):
@@ -11,7 +11,7 @@ def base_converter(number, base):
         number = number // base
 
     base_num_string = ""
-    while not digits_stack.isEmpty():
+    while not digits_stack.is_empty():
         base_num_string += str(digits[digits_stack.pop()])
 
     return base_num_string

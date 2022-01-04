@@ -1,4 +1,4 @@
-from Chapter_3.Stack import Stack
+from Chapter_3.Stack_Review.Stack import Stack
 
 
 def parChecker(check_string):
@@ -10,13 +10,13 @@ def parChecker(check_string):
         if symbol == '(':
             s.push(symbol)
         elif symbol == ')':
-            if s.isEmpty():
+            if s.is_empty():
                 balanced = False
             else:
                 s.pop()
         idx += 1
 
-    if balanced and s.isEmpty():
+    if balanced and s.is_empty():
         return True
     else:
         return False

@@ -1,4 +1,4 @@
-from Chapter_3.Stack import Stack
+from Chapter_3.Stack_Review.Stack import Stack
 
 if __name__ == "__main__":
     string = "SomeStringInReverse"
@@ -10,7 +10,7 @@ if __name__ == "__main__":
         s.push(character)
 
     #Print the string out
-    while not s.isEmpty():
+    while not s.is_empty():
         reversed_string += s.pop()
 
     print("String After: %s" % reversed_string)

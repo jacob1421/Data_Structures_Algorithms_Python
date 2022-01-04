@@ -1,4 +1,4 @@
-from Chapter_3.Stack import Stack
+from Chapter_3.Stack_Review.Stack import Stack
 
 
 def convert_base_10_to_binary(base_10_number):
@@ -10,7 +10,7 @@ def convert_base_10_to_binary(base_10_number):
         base_10_number = base_10_number // 2
 
     bin_num = ""
-    while not bin_stack.isEmpty():
+    while not bin_stack.is_empty():
         bin_num += str(bin_stack.pop())
 
     return bin_num
